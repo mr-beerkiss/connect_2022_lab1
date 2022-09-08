@@ -1,3 +1,3 @@
 export const onRequest = () => {
-  return new Response({ time: new Date().toISOString()})
+  return new Response(JSON.stringify({ time: new Date().toISOString()}))
 }
